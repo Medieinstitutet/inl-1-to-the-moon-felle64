@@ -26,32 +26,44 @@ body{
 
     
 }
-
+/*--------------------------------------------*/
+/*---------------Layout Textpage--------------*/
+/*--------------------------------------------*/
 .text-page{
     background-image:url('../img/space.jpg') ;
     background-size: cover ;
-    color: white;
-    position: absolute;
-    color: white;
-    width: 340px;
-    height: 230px;
-    left: 6%;
-    top: 135%;
-    z-index: 1;
+    color: white; 
+    border: 1px solid rgb(0, 255, 221);
+}
+.box-1{
+    border: 3px solid rgb(225, 0, 255);
+}
+.header-space{
     font-family: 'Rubik', sans-serif;
+    border: 1px solid rgb(255, 0, 0);
+    font-size: 32px;
+}
+.header-tom{
+   
     border: 1px solid white;
 }
-.header-text-page{
-    font-weight: 300;
-    position: relative;
-}
-.main-text{
-   text-align: left;
-   font-size: 10px;
-   line-height: 170%;
-   position: relative; 
-}
 
+.main-text-1{
+  
+   border: 1px solid rgb(255, 0, 200);
+}
+.quote-text{
+    border: 1px solid rgb(0, 252, 134);
+}
+.box-2{
+    border: 3px solid aqua;
+}
+.quote-text-2{
+    border: 1px solid rgb(29, 145, 129);
+}
+.main-text-2{
+    border: 1px solid rgb(0, 26, 255);
+}
 /*--------------------------------------------*/
 /*-----------------Astronaut------------------*/
 /*--------------------------------------------*/
@@ -78,7 +90,7 @@ body{
 
 
 /*--------------------------------------------*/
-/*-----------------Desktop--------------------*/
+/*-----------------Desktop Astonaut-----------*/
 /*--------------------------------------------*/
 @media screen and (min-width: 800px) {
     .astronaut .heading-box{
@@ -101,9 +113,16 @@ body{
         left: 10px;
 
     }
-
-
-
+/*--------------------------------------------*/
+/*-----------------Desktop Textpage-----------*/
+/*--------------------------------------------*/
+    .text-page{
+        display: flex;
+    }
+    .box-1 .box-2{
+        width: 50%;
+        gap: 100px;
+    }
 }
 /*--------------------------------------------*/
 /*-----------------Menu-----------------------*/
