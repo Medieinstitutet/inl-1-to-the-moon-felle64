@@ -54,8 +54,12 @@ body{
         left: 10px;
         z-index: 0;
         color:gray;
+        }
     }
-    }
+}
+blockquote{
+    padding: 0;
+    margin: 0;
 }
 .header-tom{
    
@@ -74,6 +78,7 @@ body{
 }
 .quote-text-2{
     border: 1px solid rgb(29, 145, 129);
+    opacity: 0;
 }
 .main-text-2{
     border: 1px solid rgb(0, 26, 255);
@@ -137,6 +142,10 @@ body{
     .box-1 .box-2{
         width: 50%;
        
+    }
+    .quote-text-2{
+        border: 1px solid rgb(29, 145, 129);
+        opacity: 100%;
     }
 }
 /*--------------------------------------------*/
