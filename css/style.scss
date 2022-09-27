@@ -39,26 +39,29 @@ body{
     margin-top: 2rem;
     margin-left: 3rem;
     h2{
+        margin: 0;
+        padding: 0;
         span:first-of-type{
             z-index: 1;
             position: relative;
             font-family: 'Rubik', sans-serif;
             font-weight: 500;
             display: block;
-            font-size: 100px;
+            font-size: 65px;
         }
         span:nth-of-type(2){ 
             position: relative;
-            top: -65px;
+            top: -45px;
             left: 25px;
             color:gray;
             font-family: 'Times New Roman', Times,;
             font-weight: bold;
-            font-size: 115px;
+            font-size: 80px;
         }
     }
 }
 .header-tom{
+    margin-top: 0;
     position: relative;
    /* border: 1px solid white;*/
     margin-left: 3rem;
@@ -111,18 +114,21 @@ blockquote{
 }
 .quote-text-2{
     /*border: 1px solid rgb(29, 145, 129);*/
-    opacity: 0;
+    display: none;
+    border: 3px solid wheat;
 }
 .main-text-page2-1{
-    /*border: 1px solid rgb(0, 26, 255);*/
+    border: 1px solid rgb(0, 26, 255);
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
+    margin-top:0;
     margin-right: 4rem;
     margin-left: 2rem;
     color: white;
+
     }
 img{
-    float: right;
+    display: none;
 }
 .main-text-page2-2{
         font-family: 'Rubik', sans-serif;
@@ -131,20 +137,15 @@ img{
         margin-right: 4rem;
         margin-left: 2rem;
         top:-10px;
+        
         span:first-of-type{
             position: absolute;
         }
         span:nth-of-type(2){
             position: relative;
             top: 30px;
-            
-        }
-        span:nth-of-type(3){
-            position:relative;
-            top: 60px;
-            margin-left: -145px;
-        }
     }
+}
 .link-text{
     text-align: left;
     color: rgb(255, 17, 227);
@@ -202,14 +203,40 @@ img{
 /*--------------------------------------------*/
     .text-page{
         display: flex;
-        gap: 100px;
+        gap: 10rem;
     }
     .box-1 .box-2{
         width: 50%;
     }
+    .header-space{
+        margin-top: 2rem;
+        margin-left: 3rem;
+        h2{
+            span:first-of-type{
+                z-index: 1;
+                position: relative;
+                font-family: 'Rubik', sans-serif;
+                font-weight: 500;
+                display: block;
+                font-size: 100px;
+            }
+            span:nth-of-type(2){ 
+                position: relative;
+                top: -65px;
+                left: 25px;
+                color:gray;
+                font-family: 'Times New Roman', Times,;
+                font-weight: bold;
+                font-size: 115px;
+            }
+        }
+    }
+    .quote-text{
+        margin-left: 10rem;
+    }
     .quote-text-2{
         /*border: 1px solid rgb(29, 145, 129);*/
-        opacity: 100%;
+        display: flex;
         background: #fe55ed;
         background: linear-gradient(to right, #fe55ed 0%, #6B6B6B 50%, #fe55ed 100%);
         -webkit-background-clip: text;
@@ -223,7 +250,19 @@ img{
 
     }
     .main-text-page2-1{
-        margin-top: 200px;
+        border: 1px solid rgb(0, 26, 255);
+        margin-top: 70px;
+        margin-right: 4rem;
+        margin-left: 2rem;
+        color: white;
+    }
+    img{
+        display: flex;
+        float: right;
+        margin-top: 100px;
+        clear:both;
+        margin-right: 5rem;
+        transform: rotate(5deg);
     }
 }
 /*--------------------------------------------*/
