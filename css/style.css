@@ -2,8 +2,14 @@
 /*-----------------Helps----------------------*/
 /*--------------------------------------------*/
 /* outline: 3px solid red; */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 body {
-  background-color: brown;
+  background-color: rgb(0, 0, 0);
 }
 
 /*--------------------------------------------*/
@@ -27,15 +33,16 @@ body {
   background-image: url("../img/space.jpg");
   background-size: cover;
   color: white;
-  border: 1px solid rgb(0, 255, 221);
+  /*border: 1px solid rgb(0, 255, 221);*/
+  opacity: 0.7;
 }
 
 .box-1 {
-  border: 3px solid rgb(225, 0, 255);
+  /*border: 3px solid rgb(225, 0, 255);*/
 }
 
 .header-space {
-  margin-top: 2rem;
+  top: -60px;
   margin-left: 3rem;
 }
 .header-space h2 {
@@ -63,7 +70,7 @@ body {
 .header-tom {
   margin-top: 0;
   position: relative;
-  /* border: 1px solid white;*/
+  /*border: 1px solid white;*/
   margin-left: 3rem;
   font-family: "Rubik", sans-serif;
   font-size: 20px;
@@ -71,28 +78,18 @@ body {
 }
 
 .main-text-page1-1 {
-  /* border: 1px solid rgb(255, 0, 200);*/
+  /*border: 1px solid rgb(255, 0, 200);*/
   display: block;
   margin-left: 3rem;
   margin-right: 20px;
   font-family: "Rubik", sans-serif;
   font-weight: 300;
-  font-size: 15px;
-  text-align: left;
-}
-
-.main-text-page1-2 {
-  /* border: 1px solid rgb(255, 0, 200);*/
-  margin-left: 3rem;
-  margin-right: 15px;
-  font-family: "Rubik", sans-serif;
-  font-weight: 300;
-  font-size: 15px;
+  font-size: 20px;
   text-align: left;
 }
 
 .quote-text {
-  /* border: 1px solid rgb(0, 252, 134);*/
+  /*border: 1px solid rgb(0, 252, 134);*/
   font-family: "Rubik", sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
@@ -110,43 +107,34 @@ blockquote {
 }
 
 .box-2 {
-  border: 3px solid aqua;
+  /*border: 3px solid aqua;*/
 }
 
 .quote-text-2 {
   /*border: 1px solid rgb(29, 145, 129);*/
   display: none;
-  border: 3px solid wheat;
 }
 
 .main-text-page2-1 {
-  border: 1px solid rgb(0, 26, 255);
+  /*border: 1px solid rgb(0, 26, 255);*/
   font-family: "Rubik", sans-serif;
   font-weight: 300;
   margin-top: 0;
   margin-right: 4rem;
   margin-left: 2rem;
   color: white;
+  font-size: 20px;
 }
-
-img {
-  display: none;
-}
-
-.main-text-page2-2 {
-  font-family: "Rubik", sans-serif;
-  font-weight: 300;
-  /* border: 1px solid rgb(0, 26, 255);*/
-  margin-right: 4rem;
-  margin-left: 2rem;
-  top: -10px;
-}
-.main-text-page2-2 span:first-of-type {
+.main-text-page2-1 span:first-of-type {
   position: absolute;
 }
-.main-text-page2-2 span:nth-of-type(2) {
+.main-text-page2-1 span:nth-of-type(2) {
   position: relative;
   top: 30px;
+}
+
+.tom {
+  display: none;
 }
 
 .link-text {
@@ -157,6 +145,10 @@ img {
   text-decoration: underline;
   margin-top: 70px;
   margin-bottom: 50px;
+}
+
+.cookie-box {
+  display: none;
 }
 
 /*--------------------------------------------*/
@@ -206,12 +198,13 @@ img {
   /*--------------------------------------------*/
   .text-page {
     display: flex;
-    gap: 10rem;
+    gap: 100px;
   }
-  .box-1 .box-2 {
+  .box-1, .box-2 {
     width: 50%;
   }
   .header-space {
+    /*border: 3px solid navajowhite;*/
     margin-top: 2rem;
     margin-left: 3rem;
   }
@@ -233,10 +226,12 @@ img {
     font-size: 115px;
   }
   .quote-text {
-    margin-left: 10rem;
+    margin-left: 15rem;
+    text-align: left;
+    font-size: 32px;
   }
   .quote-text-2 {
-    /*border: 1px solid rgb(29, 145, 129);*/
+    /*border: 3px solid rgb(29, 145, 129);*/
     display: flex;
     background: #fe55ed;
     background: linear-gradient(to right, #fe55ed 0%, #6B6B6B 50%, #fe55ed 100%);
@@ -245,24 +240,67 @@ img {
     font-family: "Rubik", sans-serif;
     font-weight: 300;
     font-size: 3rem;
-    text-align: center;
+    text-align: left;
     margin-right: 22rem;
-    margin-top: 7rem;
+    margin-top: 5rem;
   }
   .main-text-page2-1 {
-    border: 1px solid rgb(0, 26, 255);
-    margin-top: 70px;
+    /*border: 1px solid rgb(0, 26, 255);*/
+    margin-top: 50px;
     margin-right: 4rem;
     margin-left: 2rem;
     color: white;
+    float: left;
   }
-  img {
-    display: flex;
+  .main-text-page2-1 span:first-of-type {
+    position: absolute;
+  }
+  .main-text-page2-1 span:nth-of-type(2) {
+    position: relative;
+    top: 30px;
+  }
+  .main-text-page2-1 br {
+    white-space: inherit;
+  }
+  .tom {
+    height: auto;
+    width: 120px;
+    display: block;
     float: right;
-    margin-top: 100px;
-    clear: both;
-    margin-right: 5rem;
-    transform: rotate(5deg);
+    transform: rotate(2deg);
+    margin-right: 100px;
+  }
+  /*--------------------------------------------*/
+  /*-----------------Cookie Box-----------------*/
+  /*--------------------------------------------*/
+  .cookie-box {
+    box-sizing: border-box;
+    z-index: 5;
+    display: block;
+    background-color: rgb(6, 6, 31);
+    color: rgb(225, 0, 100);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: "Rubik", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px rgb(225, 0, 100);
+    }
+    to {
+      text-shadow: 0 0 10px rgb(225, 0, 100);
+    }
+  }
+  .cookie-box .cookie-text .cookie-button .button-text {
+    display: block;
+    padding: 0 20px;
   }
 }
 /*--------------------------------------------*/
